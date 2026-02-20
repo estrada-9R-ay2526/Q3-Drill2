@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Drill 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<center>
+    <div class="container">
+        <h1>Triangle Arex Calculator</h1>
+
+        <div>
+        <img src="https://cdn.britannica.com/54/4754-050-1F59FBDB/triangle-lettering-vertices-sides-angles-addition-one.jpg" alt="triangle" style="width:500px;height:300px;">
+        </div>
+
+            <form>
+
+                    <label>Base:</label><br>
+                    <input type="number" id="ricciardo"><br>
+
+                    <label>Height:</label><br>
+                    <input type="number"  id="verstappen"><br>
+
+                    <label>Area:</label><br>
+                    <input type="number" id="vettel"><br>
+
+            <button type="button" class="btn btn-warning" onclick="findArea()">CALCULATE</button>
+            <button type="button" class="btn btn-warning" onclick="window.location.reload()">REFRESH</button>
+
+            <script>
+                function findArea() {
+                    var base = document.getElementById("ricciardo").value;
+                    var height = document.getElementById("verstappen").value;
+                    var area = 0.5 * base * height;
+                    document.getElementById("vettel").value = area;
+                }
+            </script>
+
+                    
+                    
+            </form>
+    </div>
+</center>
+    
+</body>
+</html>
